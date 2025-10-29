@@ -272,15 +272,38 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      {/* Header Premium */}
+      <header className="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center h-20">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <h1 className="text-4xl font-black text-black">
-                NOVITA
-              </h1>
+          <div className="flex items-center justify-center h-28">
+            {/* Logo Premium com Efeitos Avançados */}
+            <div className="flex-shrink-0 group cursor-pointer relative">
+              <div className="relative overflow-hidden">
+                {/* Logo Principal com Gradiente Dinâmico */}
+                <h1 className="text-6xl font-black bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent hover:from-gray-200 hover:via-white hover:to-gray-200 transition-all duration-700 transform group-hover:scale-110 relative z-10">
+                  NOVITA
+                </h1>
+                
+                {/* Efeito de Brilho Animado */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 blur-2xl transition-all duration-700 transform -skew-x-12 group-hover:translate-x-full"></div>
+                
+                {/* Linha Decorativa Inferior */}
+                <div className="absolute -bottom-3 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-x-0 group-hover:scale-x-100"></div>
+                
+                {/* Pontos Decorativos */}
+                <div className="absolute -top-2 -left-2 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100"></div>
+                <div className="absolute -top-2 -right-2 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200"></div>
+              </div>
+              
+              {/* Tagline Premium */}
+              <div className="text-center mt-3 overflow-hidden">
+                <p className="text-xs text-gray-400 font-bold tracking-[0.3em] opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                  PREMIUM SPORTS COLLECTION
+                </p>
+              </div>
+              
+              {/* Círculo de Fundo Sutil */}
+              <div className="absolute inset-0 -z-10 w-32 h-32 bg-gradient-to-br from-gray-50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 transform scale-0 group-hover:scale-150 blur-xl"></div>
             </div>
           </div>
         </div>
